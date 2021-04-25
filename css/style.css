@@ -5,30 +5,34 @@
 }
 body {
     font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-image: linear-gradient(to bottom, #128C7E 0%, #128C7E 20%, #dfe0d8 20%, #dfe0d8 100%);
     
 }
 /*LAYOYT*/
 .menu-app {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to bottom, #128C7E 0%, #128C7E 20%, #dfe0d8 20%, #dfe0d8 100%);
-}
-.container {
     display:flex;
     flex-basis: auto;
-    min-width: 900px;
-    height: 90%;
+    min-width: 80%;
+    height:90%;
     justify-content: center;
     align-items: center;
-    background: lavenderblush;
+    background: lightslategray;
 }
+
 /*MENU-LEFT*/
 .menu-left {
-    height:90%;
+    height: 100%;
     flex-basis: 35%;
     background-color: aqua;
+}
+/*Avatar container*/
+.avatar-container {
+    background-color: #ededed;
+    padding: 10px;
 }
 /*Contenuto top testo imaggini e icone*/
 .content-top {
@@ -46,24 +50,84 @@ body {
     height: 40px;
     border-radius: 50%;
 }
+
 /*LISTA ICONE AVATAR*/
 .lista-icone  {
     display: flex;
-}
+} 
 .lista-icone li  {
     list-style: none;
     padding: 8px;
 }
 .lista-icone li a {
-    color: #dfe0d8;
+    color:#bababa;
 }
 
 /*Notifica mex*/
+.notifica-mex {
+    display: flex;
+    align-items: center;
+    background-color: #a2dffe;
+}
+.campana-notifica {
+    padding:10px;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.campana-notifica i {
+    color:#a2dffe;
+}
+.text-notifica p{
+    font-size: 14px;
+    color:#000000;
+}
+.text-notifica a {
+    font-size: 14px;
+    color:#77a3ba;
+}
 
+/*INPUT RICERCA*/
+.container-ricerca {
+    width:100%;
+    height:60px;
+    display: flex;
+    align-items: center;
+    color:#bec1c3;
+    padding: 0 10px;
+    background-color: #fbfbfb;
+}
+.icon-ricerca {
+    flex-basis: 20%;
+    background-color: white;
+    height: 30px;
+}
+.icon-ricerca {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.icon-ricerca i {
+    color:#bec1c3;
+    cursor: pointer;
+}
+.content-ricerca {
+    flex-basis:80%;
+    background-color:white;
+    border: 1px solid #f6f6f6;
+    height: 30px;
+}
+.content-ricerca input {
+    width: 100%;
+    height:100%;
+    border: none;
+    padding-left: 10px;;
+}
 
 /*MENU-RIGHT*/
 .menu-right {
-    height:90%;
+    height: 100%;
     flex-basis:65%;
     background-color: lightcoral;
 }
