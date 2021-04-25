@@ -5,4 +5,65 @@
 }
 body {
     font-family: 'Lato', sans-serif;
+    
+}
+/*LAYOYT*/
+.menu-app {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #128C7E 0%, #128C7E 20%, #dfe0d8 20%, #dfe0d8 100%);
+}
+.container {
+    display:flex;
+    flex-basis: auto;
+    min-width: 900px;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    background: lavenderblush;
+}
+/*MENU-LEFT*/
+.menu-left {
+    height:90%;
+    flex-basis: 35%;
+    background-color: aqua;
+}
+/*Contenuto top testo imaggini e icone*/
+.content-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testo-image {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.testo-image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+/*LISTA ICONE AVATAR*/
+.lista-icone  {
+    display: flex;
+}
+.lista-icone li  {
+    list-style: none;
+    padding: 8px;
+}
+.lista-icone li a {
+    color: #dfe0d8;
+}
+
+/*Notifica mex*/
+
+
+/*MENU-RIGHT*/
+.menu-right {
+    height:90%;
+    flex-basis:65%;
+    background-color: lightcoral;
 }
