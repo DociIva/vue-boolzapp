@@ -91,11 +91,5 @@ const app = new Vue({
         ],
         newAvatar: '',
     },
-    methos: {
-        addAvatar() {
-            console.log('insersci');
-        
-         this.newAvatar = 'avatar_'
-        }
-    }
-})
+   
+});
