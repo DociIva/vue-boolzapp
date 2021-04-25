@@ -20,90 +20,138 @@
    <!--Contenitore app-->
  <div id="app" class="menu-app">
            <!--MENU-LEFT-->
-       <div class="menu-left">
-
-                  <!--foto lista avatar contenuto -->
-               <div class="avatar-container">
-
-                   <div class="content-top">
+        <div class="menu-left">
+            <!--to, avatar-container -->
+          <section class="top-menu-left">
+              
+              <div class="content-top">
                  
-                       <div class="testo-image">
-                          <!--image-->
-                          <img src="./img/avatar_io.jpg" alt="Avatar personale">
-                           <!--testo-->
-                          <p>Nome Utente</p>
-                       </div>
+                <div class="testo-image">
+                   <!--image-->
+                   <img src="./img/avatar_io.jpg" alt="Avatar personale">
+                    <!--testo-->
+                   <p>Nome Utente</p>
+                </div>
 
-                        <!--lista icone-->    
-                      <ul class="lista-icone">
-                          <li>
-                             <a href="#">
-                                <i class="fas fa-circle-notch"></i>
-                            </a>
-                          </li>
-                          <li>
-                             <a href="#">
-                               <i class="fas fa-comment-alt"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fas fa-ellipsis-v"></i>
-                            </a>
-                         </li>
-                     </ul>
-                 </div> <!--chiusura content-top-->
-               </div> <!--chiusura avatar-top-->
-
-             <!--Notifica dei messaggi-->
+                   <!--lista icone-->    
+                  <ul class="lista-icone">
+                      <li>
+                         <a href="#">
+                          <i class="fas fa-circle-notch"></i>
+                        </a>
+                     </li>
+                      <li>
+                       <a href="#">
+                          <i class="fas fa-comment-alt"></i>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="#">
+                         <i class="fas fa-ellipsis-v"></i>
+                       </a>
+                    </li>
+                 </ul>
+              </div> <!--chiusura content-top-->
+          </section> <!--chiusura top-menu-left-->
+            <!--main-menu-left -->
+          <section class="content-menu-left">
+                 <!--Notifica dei messaggi-->
              <div class="notifica-mex">
-                   <!--Icona campana not-->
-                  <div class="campana-notifica">
-                     <i class="fas fa-bell-slash"></i>
-                  </div>
-                   <!--Text della notifica-->
-                 <div class="text-notifica">
-                     <p>Ricevi notiche di nuovi messaggi</p>
-                     <p><a href="#">Attiva notifica desktop</a></p>
-                 </div>
+                <!--Icona campana not-->
+                <div class="campana-notifica">
+                  <i class="fas fa-bell-slash"></i>
+                </div>
+               <!--Text della notifica-->
+               <div class="text-notifica">
+                  <p>Ricevi notiche di nuovi messaggi</p>
+                  <p><a href="#">Attiva notifica desktop</a></p>
+               </div>
              </div> <!--chiusura notifica-mex -->
 
-             <!--INPUT ricerca-->
-             <div class="container-ricerca">
-                 <!--icona ricerca-->
-                 <div class="icon-ricerca">
-                     <i class="fas fa-search"></i>
-                 </div>
-                 
-                 <!--Input ricerca-->
-                <div class="content-ricerca">
-                    <input type="text" placeholder="Cerca o inizia una nuova chat">
-                </div>
-             </div>  <!--chiusura ricerca-container-->
-
-             <!--CONTATTI AVATAR-->
-              <div class="contatti-avatar">
-
+               <!--INPUT ricerca-->
+            <div class="container-ricerca">
+                  <!--icona ricerca-->
+                <div class="icon-ricerca">
+                   <i class="fas fa-search"></i>
+               </div>
+            
+               <!--Input ricerca-->
+              <div class="content-ricerca">
+                 <input type="text" placeholder="Cerca o inizia una nuova chat">
               </div>
+            </div>  <!--chiusura ricerca-container-->
+
+          </section> <!--chiusura content menu -left-->
+            <!--footer-menu-left-->
+          <section class="bottom-menu-left">
+            <!--IMMAGINI DA PORTARE CON JS-->
+
+          </section>
+             
       
         </div> <!--chiusura menu-left-->
 
           <!--MENU-RIGHT-->
         <div class="menu-right">
               <!--avatar right--> 
-            <!--Header-->
-          <section class="content-header-menu">
+              <!--Header-->
+           <section class="content-header-right">
+                <div class="testo-image-right">
+                   <!--image-->
+                   <img src="./img/avatar_1.jpg" alt="Imagine 1">
+                    <!--accesso-->
+                    <div class="accesso">
+                      <!--nome-->
+                       <p>Michele</p>
+                      <!--testo-->
+                     <p>Utimo accesso oggi alle 10:35</p>
+                    </div> <!--chiusura accesso-->
+                </div> <!--chiusura testo-image-right-->
+                 <!--lista icone-->    
+                 <ul class="lista-icone-right">
+                    <li>
+                       <a href="#">
+                          <i class="fas fa-circle-notch"></i>
+                       </a>
+                    </li>
+                    <li>
+                         <a href="#">
+                          <i class="fas fa-paperclip"></i>
+                        </a>
+                    </li>
+                    <li> 
+                         <a href="#">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                    </li>
+                </ul>
+             
+             </section> <!--chiusura della content-header-right-->
 
-          </section>
+             <!--main-->
+             <section class="content-main-right">
+               <!--fumetti-->
+                  <div class="container-fumetto-1">
+                       <!--fumetto 1-->
+                      <div class="chat-1">
+                        <p>Messaggio inviato</p>
+                      </div>
+                  </div>
+                  <div class="container-fumetto-2">
+                       <!--fumetto 2-->
+                       <div class="chat-2">
+                         <p>Messaggio ricevuto</p>
+                       </div>
+                   </div>
+                  
+                      
+                  
 
-          <!--main-->
-          <section class="content-main-menu">
+             </section>
+             <!--footer-->
+             <section class="content-footer-right">
 
-          </section>
-          <!--footer-->
-          <section class="content-footer-menu">
-
-          </section>
+             </section>
 
         </div> <!--chiusura del menu right-->   
 
