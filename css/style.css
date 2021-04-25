@@ -100,9 +100,6 @@ body {
 .icon-ricerca {
     flex-basis: 20%;
     background-color: white;
-    height: 30px;
-}
-.icon-ricerca {
     display: flex;
     justify-content:center;
     align-items: center;
@@ -121,7 +118,7 @@ body {
     width: 100%;
     height:100%;
     border: none;
-    padding-left: 10px;;
+    padding-left: 10px;
 }
 .bottom-menu-left {
     flex-grow: 1;
@@ -233,9 +230,39 @@ body {
     padding-right: 8px;
     color: #B1B1B1;
 }
-
 /*Content footer-right*/
 .content-footer-right {
-    padding: 20px;
-    background-color:lightsalmon;
+    padding: 5px;
+    background-color:#f4f0ed;
+    display: flex;
+    align-items: center;
+}
+/*icona smile*/
+.icona-smile {
+    flex-basis: 10%;
+}
+.icona-smile i {
+   color: #777e82;
+   font-size: 25px;
+}
+/*input mex*/
+.input-mex {
+    flex-basis: 80%;
+    background-color: white;
+    border-radius: 10px;
+}
+.input-mex input {
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+}
+/*Microphone*/
+.icona-microphone {
+    flex-basis: 10%;
+    margin-left: 30px;
+}
+
+.icona-microphone i {
+    color:#777e82;
+    font-size: 25px;
 }
