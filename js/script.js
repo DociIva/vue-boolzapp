@@ -89,7 +89,8 @@ const app = new Vue({
                 ],
             },
         ],
-        newAvatar: '',
+        
+        
     },
-   
+    
 });

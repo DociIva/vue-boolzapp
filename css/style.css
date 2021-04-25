@@ -44,6 +44,9 @@ body {
     justify-content:center;
     align-items: center;
 }
+.testo-image:hover {
+    cursor: pointer;
+}
 .testo-image img {
     width: 40px;
     height: 40px;
@@ -77,9 +80,15 @@ body {
 .campana-notifica i {
     color:#a2dffe;
 }
+.campana-notifica i:hover {
+    cursor: pointer;
+}
 .text-notifica p{
     font-size: 14px;
     color:#000000;
+}
+.text-notifica p:hover {
+    cursor: pointer;
 }
 .text-notifica a {
     font-size: 14px;
@@ -127,6 +136,10 @@ body {
     list-style: none ;
     padding: 20px;
 }
+.lista-avatar img {
+    height: 40px;
+    border-radius: 50%;
+}
 /*MENU-RIGHT*/
 .menu-right {
     height: 100%;
@@ -147,6 +160,9 @@ body {
     height: 40px;
     border-radius: 50%;
 }
+.testo-image-right:hover {
+    cursor: pointer;
+}
 .testo-image-right {
     display: flex;
 }
@@ -154,6 +170,7 @@ body {
     color: #777e82;
     font-size: 12px;
 }
+
 /*LISTA ICONE AVATAR RIGHT*/
 .lista-icone-right  {
     display: flex;
@@ -184,6 +201,9 @@ body {
     margin-right: 40px;
     border-radius: 5px;
     background: #D5F9BA;
+}
+.container-fumetto-1:hover {
+    cursor: pointer;
 }
 /*CHAT 1 MESSA IVIATO*/
 .chat-1 {
@@ -216,6 +236,9 @@ body {
     border-radius: 5px;
     background: #fff;
 }
+.container-fumetto-2:hover {
+    cursor: pointer;
+}
 /*CHAT 2 messaggi ricevuti */
 .chat-2 {
     margin-top: 8px;
@@ -245,6 +268,9 @@ body {
 .icona-smile {
     flex-basis: 10%;
 }
+.icona-smile:hover {
+    cursor: pointer;
+}
 .icona-smile i {
    color: #777e82;
    font-size: 25px;
@@ -264,6 +290,9 @@ body {
 .icona-microphone {
     flex-basis: 10%;
     margin-left: 30px;
+}
+.icona-microphone:hover {
+    cursor: pointer;
 }
 
 .icona-microphone i {
