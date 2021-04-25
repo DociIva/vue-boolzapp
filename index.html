@@ -85,6 +85,14 @@
             <!--footer-menu-left-->
           <section class="bottom-menu-left">
             <!--IMMAGINI DA PORTARE CON JS-->
+             <ul class="lista-avatar"
+                 
+                v-for="(lista, index) in element">
+                <li>
+                  {{}}  {{lista.name}} 
+                </li>
+
+             </ul>
 
           </section>
              
@@ -133,7 +141,7 @@
                <!--fumetti-->
                  <div class="contenitore-1">
                   <div class="container-fumetto-1">
-                       <!--fumetto 1-->
+                       <!--MESSAGGI INVIATI-->
                       <div class="chat-1">
                         <p>Messaggio inviato</p>
                       </div>
@@ -145,7 +153,7 @@
                 </div> <!--chiusura contenitore-1-->
                 <div class="contenitore-2">
                   <div class="container-fumetto-2">
-                    <!--fumetto 2-->
+                    <!--MESSAGGI RICEVUTI-->
                     <div class="chat-2">
                       <p>Messaggio ricevuto</p>
 

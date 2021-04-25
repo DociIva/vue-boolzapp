@@ -9,8 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height:100vh;
-    background-image: linear-gradient(to bottom, #128C7E 0%, #128C7E 20%, #dfe0d8 20%, #dfe0d8 100%);
-    
+    background-image: linear-gradient(to bottom, #128C7E 0%, #128C7E 20%, #dfe0d8 20%, #dfe0d8 100%); 
 }
 /*LAYOYT*/
 .menu-app {
@@ -21,7 +20,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 /*MENU-LEFT*/
 .menu-left {
     height: 100%;
@@ -122,6 +120,12 @@ body {
 }
 .bottom-menu-left {
     flex-grow: 1;
+    background-color: #fff;
+    overflow-y: auto;
+}
+.lista-avatar li {
+    list-style: none ;
+    padding: 20px;
 }
 /*MENU-RIGHT*/
 .menu-right {
@@ -165,8 +169,8 @@ body {
 .content-main-right {
     flex-grow: 1;
     background-image:url(../img/mine.jpg);
+    overflow-y: auto;
 }
-
 /*fumetti*/
 .contenitore-1 {
     display: flex;
@@ -212,7 +216,7 @@ body {
     border-radius: 5px;
     background: #fff;
 }
-/*CHAT 2*/
+/*CHAT 2 messaggi ricevuti */
 .chat-2 {
     margin-top: 8px;
 }
