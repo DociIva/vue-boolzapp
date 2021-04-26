@@ -52,7 +52,6 @@ body {
     height: 40px;
     border-radius: 50%;
 }
-
 /*LISTA ICONE AVATAR*/
 .lista-icone  {
     display: flex;
@@ -127,18 +126,24 @@ body {
     border: none;
     padding-left: 10px;
 }
+/*BOTTOM-MENU-LEFT*/
 .bottom-menu-left {
     flex-grow: 1;
     background-color: #fff;
     overflow-y: auto;
 }
-.lista-avatar li {
-    list-style: none ;
-    padding: 20px;
+.container-avatar-nome {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
 }
 .lista-avatar img {
     height: 40px;
     border-radius: 50%;
+    margin-right: 15px;
+}
+.lista-nome h3 {
+    font-weight: bold;
 }
 /*MENU-RIGHT*/
 .menu-right {
@@ -282,6 +287,7 @@ body {
     border-radius: 10px;
 }
 .input-mex input {
+    width: 100%;
     border: none;
     padding: 12px;
     border-radius: 10px;
@@ -294,7 +300,6 @@ body {
 .icona-microphone:hover {
     cursor: pointer;
 }
-
 .icona-microphone i {
     color:#777e82;
     font-size: 25px;

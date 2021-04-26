@@ -82,21 +82,23 @@
             </div>  <!--chiusura ricerca-container-->
 
           </section> <!--chiusura content menu -left-->
+
             <!--footer-menu-left-->
           <section class="bottom-menu-left">
             <!--IMMAGINI DA PORTARE CON JS-->
-             
-             <ul class="lista-avatar"
-                 
-                v-for="lista in element">
-                <li>
-                    <img src="" alt="" >
-                    {{lista.name}}
-                </li>
-
-             </ul>
-
-          </section>
+             <div v-for="lista in element"  
+                 class="container-avatar-nome">
+                  <!--avatar foto-->
+                 <div class="lista-avatar">
+                     <!--messo tramite ''-->
+                     <img v-bind:src=" './img/avatar' + lista.avatar + '.jpg' " alt="">
+                 </div>
+                 <div class="lista-nome">
+                      <h3>{{ lista.name }}</h3>
+                 </div>
+           </div> <!--chiusura del container-avatar-nome -->
+                
+          </section> <!--chiusura del bottom-menu-left-->
              
       
         </div> <!--chiusura menu-left-->
