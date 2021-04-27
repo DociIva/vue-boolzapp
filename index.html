@@ -86,9 +86,17 @@
             <!--footer-menu-left-->
           <section class="bottom-menu-left">
             <!--IMMAGINI DA PORTARE CON JS-->
-             <div v-for="lista in element"  
-                 class="container-avatar-nome">
-                  <!--avatar foto-->
+             <!--:classe dinamica per poter mettere l'espressione direttamente nel html-->
+             <div v-for="(lista, index ) in element" 
+                 
+                 class="container-avatar-nome"
+                   
+                 :class="{active: index === activeElement}"
+
+                 @click="setActiveElemnte(index)"
+                 >
+                 
+                 <!--avatar foto-->
                  <div class="lista-avatar">
                      <!--messo tramite ''-->
                      <img v-bind:src=" './img/avatar' + lista.avatar + '.jpg' " alt="">
@@ -100,7 +108,6 @@
                 
           </section> <!--chiusura del bottom-menu-left-->
              
-      
         </div> <!--chiusura menu-left-->
 
           <!--MENU-RIGHT-->
@@ -142,32 +149,40 @@
 
              <!--main-->
              <section class="content-main-right">
-               <!--fumetti-->
-                 <div class="contenitore-1">
-                  <div class="container-fumetto-1">
+               <!--fumetti / conversazione-->
+
+                 <div 
+                      v-for=""
+                       class="contenitore-1">
+                  <div
+                       class="container-fumetto-1">
                        <!--MESSAGGI INVIATI-->
-                      <div class="chat-1">
-                        <p>Messaggio inviato</p>
+                      <div class="mex-inviato">
+                        <p></p>
                       </div>
 
-                      <div class="accesso-chat-1">
+                      <div class="accesso-mex-inviato">
                         <p>10/12/21 15:15:00</p>
                       </div>    
                   </div> <!--chiusura fumetto 1-->
                 </div> <!--chiusura contenitore-1-->
-                <div class="contenitore-2">
-                  <div class="container-fumetto-2">
+             <!-- 
+                <div v-for="(lista,index) in this.element[this.indexElement].messages" 
+                    class="contenitore-2">
+                  <div class="container-fumetto-2"> -->
                     <!--MESSAGGI RICEVUTI-->
-                    <div class="chat-2">
-                      <p>Messaggio ricevuto</p>
+                    <!-- 
+                    <div class="mex-ricevuto">
+                      <p>{{lista.message}}</p>
 
-                      <div class="accesso-chat-2">
+                      <div class="accesso-mex-ricevuto">
                        <p>10/12/21 15:35:00</p>
                       </div>
-
-                    </div>  <!--chiusura chat-2-->
-                  </div> <!--chiusura fumetto2-->
-                </div> <!--chiusura contenitore 2-->
+                   
+                    </div> 
+                  </div> 
+                </div>
+                 -->
              </section> <!--chiusura content main-right-->
              <!--footer-->
              <section class="content-footer-right">
@@ -185,22 +200,9 @@
                     </div>
              </section>
 
-        </div> <!--chiusura del menu right-->   
-
-             
-
-     
+        </div> <!--chiusura del menu right--> 
 
   </div> <!--Chisura menu-app-->
-   
-    
-    
-      
-  
-
-
-
-
     <!--Js-->
     <script src="./js/script.js"></script>
 </body>

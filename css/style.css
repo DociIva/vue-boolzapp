@@ -142,8 +142,14 @@ body {
     border-radius: 50%;
     margin-right: 15px;
 }
+.lista-avatar img:hover {
+    cursor: pointer;
+}
 .lista-nome h3 {
     font-weight: bold;
+}
+.lista-nome h3:hover {
+    cursor: pointer;
 }
 /*MENU-RIGHT*/
 .menu-right {
@@ -211,18 +217,18 @@ body {
     cursor: pointer;
 }
 /*CHAT 1 MESSA IVIATO*/
-.chat-1 {
+.mex-inviato {
     margin-top: 8px;
 }
-.chat-1 p {
+.mex-inviato p {
     font-weight: bold;
     padding-left: 8px;
 }
-.accesso-chat-1 {
+.accesso-mex-inviato {
     display: flex;
     justify-content: flex-end;
 }
-.accesso-chat-1 p {
+.accesso-mex-inviato p {
     font-size: 10px;
     padding-right: 8px;
     color: #B1B1B1;
@@ -245,19 +251,19 @@ body {
     cursor: pointer;
 }
 /*CHAT 2 messaggi ricevuti */
-.chat-2 {
+.mex-ricevuto {
     margin-top: 8px;
 }
-.chat-2 p {
+.mex-ricevuto p {
     font-weight: bold;
     padding-left: 8px;
 }
 /*ACCESSO*/
-.accesso-chat-2 {
+.accesso-mex-ricevuto {
     display: flex;
     justify-content: flex-end;
 }
-.accesso-chat-2 p {
+.accesso-mex-ricevuto p {
     font-size: 10px;
     padding-right: 8px;
     color: #B1B1B1;

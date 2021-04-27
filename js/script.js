@@ -88,8 +88,21 @@ const app = new Vue({
                     }
                 ],
             },
-        ]  
+        ],  // per avere l'indice
+        activeElement: 0,
         
+    },
+    methods: {
+        // fun per poter scatenare l'evento al click (messo nelle img)
+        setActiveElemnte(index) {
+           
+           console.log(index);
+
+           this.activeElement = index;
+        },
+
+    
+  
     },
     
 });
