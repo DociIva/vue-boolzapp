@@ -116,7 +116,7 @@
               <!--Header-->
            <section class="content-header-right">
                 <div class="testo-image-right">
-                   <!--image    `` per prendere l'img correlato al nome-->
+                   <!--image   con : nel src `` per prendere l'img correlato al nome-->
                    <img  :src="`./img/avatar${element[activeElement].avatar}.jpg `"alt="Imagine 1">
                     <!--accesso-->
                     <div class="accesso">
@@ -152,37 +152,24 @@
                <!--fumetti / conversazione-->
 
                  <div 
-                      v-for=""
-                       class="contenitore-1">
-                  <div
-                       class="container-fumetto-1">
+                      v-for="mex in element[activeElement].messages"
+                       class="contenitore-1"
+                       :class="mex.status === 'mex-inviato' ? 'sent' : 'received' " 
+                       >
+                  
+                    <div class="container-fumetto-1">
                        <!--MESSAGGI INVIATI-->
                       <div class="mex-inviato">
-                        <p></p>
+                        <span>{{ mex.message }}</span>
                       </div>
-
                       <div class="accesso-mex-inviato">
-                        <p>10/12/21 15:15:00</p>
-                      </div>    
-                  </div> <!--chiusura fumetto 1-->
-                </div> <!--chiusura contenitore-1-->
-             <!-- 
-                <div v-for="(lista,index) in this.element[this.indexElement].messages" 
-                    class="contenitore-2">
-                  <div class="container-fumetto-2"> -->
-                    <!--MESSAGGI RICEVUTI-->
-                    <!-- 
-                    <div class="mex-ricevuto">
-                      <p>{{lista.message}}</p>
-
-                      <div class="accesso-mex-ricevuto">
-                       <p>10/12/21 15:35:00</p>
+                         <span> {{ mex.date }}</span>
                       </div>
-                   
-                    </div> 
-                  </div> 
-                </div>
-                 -->
+                       
+                    </div> <!--chiusura fumetto 1-->
+                 </div> <!--chiusura contenitore-1-->
+                
+                
              </section> <!--chiusura content main-right-->
              <!--footer-->
              <section class="content-footer-right">

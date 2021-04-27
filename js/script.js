@@ -100,7 +100,7 @@ const app = new Vue({
 
            this.activeElement = index;
            
-           console.log(this.element[this.activeElement]);
+           console.log(this.element[this.activeElement]); 
         }
 
     
