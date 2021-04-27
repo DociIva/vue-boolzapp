@@ -116,12 +116,12 @@
               <!--Header-->
            <section class="content-header-right">
                 <div class="testo-image-right">
-                   <!--image-->
-                   <img src="./img/avatar_1.jpg" alt="Imagine 1">
+                   <!--image    `` per prendere l'img correlato al nome-->
+                   <img  :src="`./img/avatar${element[activeElement].avatar}.jpg `"alt="Imagine 1">
                     <!--accesso-->
                     <div class="accesso">
                       <!--nome-->
-                       <p>Michele</p>
+                       <span> {{ element[activeElement].name }}<span>
                       <!--testo-->
                      <p>Utimo accesso oggi alle 10:35</p>
                     </div> <!--chiusura accesso-->

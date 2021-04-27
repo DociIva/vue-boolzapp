@@ -99,7 +99,9 @@ const app = new Vue({
            console.log(index);
 
            this.activeElement = index;
-        },
+           
+           console.log(this.element[this.activeElement]);
+        }
 
     
   
