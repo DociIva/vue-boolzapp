@@ -183,8 +183,14 @@
                  </div>
                   <!--input scrivi un mex-->
                   <div class="input-mex">
-                      <input type="text" placeholder="Scrivi un messaggio">
+                      <input type="text"
+                             placeholder="Scrivi un messaggio"
+                             v-model.trim="newText"
+                             @keyup.enter="addText"
+                             ref="textInput">
+                             
                   </div>
+                    
                    <!--icona mi-->
                     <div class="icona-microphone">
                        <i class="fas fa-microphone"></i>

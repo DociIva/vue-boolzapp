@@ -88,9 +88,12 @@ const app = new Vue({
                     }
                 ],
             },
-        ],  // per avere l'indice
+        ], 
+         // per la stringa vuota
+         newText:'',
+        // per avere l'indice
         activeElement: 0,
-        
+       
     },
     methods: {
         // fun per poter scatenare l'evento al click (messo nelle img)
@@ -103,9 +106,32 @@ const app = new Vue({
            console.log(this.element[this.activeElement]); 
         },
         // devi mettore la stringa vuota dove deve aggiungere
+        addText() {
+            //console.log('Scrivi qua il tuo meessaggio');
 
+            if(this.newText !== '') {
+                const mexActive = this.element[this.activeElement].messages;
+
+                   mexActive.push(
+                    {
+                        date: '10/01/2020 15:30:55',
+                        message: this.newText,
+                        status: 'received'
+                    },
+            
+                );
+                // per vedere cosa esce  
+                console.log(mexActive);
+                // pulire l'input dal mex scritto
+                this.newText = '';
+
+                // riposa automatica con il timeout
+                
+            }
+
+        }
     
-  
+      
     },
     
 });
