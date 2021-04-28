@@ -116,7 +116,7 @@ const app = new Vue({
                     {
                         date: '10/01/2020 15:30:55',
                         message: this.newText,
-                        status: 'received'
+                        status: 'sent'
                     },
             
                 );
@@ -125,8 +125,19 @@ const app = new Vue({
                 // pulire l'input dal mex scritto
                 this.newText = '';
 
-                // riposa automatica con il timeout
-                
+                // riposa automatica con il timeout ( ar fun per cosi tiene lo scope del gen)
+                setTimeout(() => {
+                    // riprendi la lista di obj di sopra e la riscrivi cambiando la proprietà del mex
+                    mexActive.push(
+                        {
+                            date: '10/01/2020 15:30:55',
+                            message: 'Ahh bello',
+                            status: 'received'
+                        },
+                    )
+
+                }, 1000);
+
             }
 
         }
