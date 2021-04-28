@@ -151,24 +151,28 @@
              <section class="content-main-right">
                <!--fumetti / conversazione-->
 
-                 <div 
-                      v-for="mex in element[activeElement].messages"
-                       class="contenitore-1"
-                       :class="mex.status === 'mex-inviato' ? 'sent' : 'received' " 
-                       >
+                 <div class="contenitore-1"
+                     
+                 >
                   
-                    <div class="container-fumetto-1">
+                    <div v-bind:class="{'container-fumetto-1': mex.status === 'received' , 'container-fumetto-2': mex.status === 'sent' }"
+                         v-for="mex in element[activeElement].messages"
+                         class="contenitore-1"
+                   
+                      >
                        <!--MESSAGGI INVIATI-->
-                      <div class="mex-inviato">
-                        <span>{{ mex.message }}</span>
+                      <div class="messaggi">
+                        <span class="mex-inviato">{{ mex.message }}</span>                        
                       </div>
+                      
                       <div class="accesso-mex-inviato">
                          <span> {{ mex.date }}</span>
                       </div>
-                       
+  
+                      
                     </div> <!--chiusura fumetto 1-->
                  </div> <!--chiusura contenitore-1-->
-                
+              
                 
              </section> <!--chiusura content main-right-->
              <!--footer-->

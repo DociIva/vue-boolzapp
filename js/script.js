@@ -101,7 +101,8 @@ const app = new Vue({
            this.activeElement = index;
            
            console.log(this.element[this.activeElement]); 
-        }
+        },
+        // devi mettore la stringa vuota dove deve aggiungere
 
     
   
